@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПРЕМИУМ TAPLINK | ТАШКЕНТ</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Oswald:wght@700;900&display=swap" rel="stylesheet">
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'black-base': '#050505',
+                    'black-card': '#111111',
+                    'lime-toxic': '#CCFF00',
+                    'red-aggro': '#E60000',
+                },
+                fontFamily: {
+                    'heading': ['Oswald', 'sans-serif'],
+                    'body': ['Montserrat', 'sans-serif'],
+                },
+                boxShadow: {
+                    'neon-lime': '0 0 20px rgba(204, 255, 0, 0.4), 0 0 40px rgba(204, 255, 0, 0.2)',
+                    'neon-lime-intense': '0 0 30px rgba(204, 255, 0, 0.6), 0 0 60px rgba(204, 255, 0, 0.4)',
+                    'neon-red': '0 0 20px rgba(230, 0, 0, 0.5), 0 0 40px rgba(230, 0, 0, 0.3)',
+                }
+            }
+        }
+    }
+</script>
+<style>
+    body {
+        background-color: #050505;
+        color: #ffffff;
+        overflow-x: hidden;
+    }
+
+    .dark-grid {
+        background-size: 50px 50px;
+        background-image:
+            linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    .clip-path-slant {
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 0% 100%);
+    }
+
+    .clip-path-btn {
+        clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+    }
+
+    /* Убираем стандартные скроллбары для жесткого лука */
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #050505;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #CCFF00;
+    }
+</style>
+</head>
+<body class="font-body antialiased selection:bg-lime-toxic selection:text-black">
+
+<!-- HERO SECTION -->
+<header class="relative min-h-screen flex items-center pt-20 pb-20 lg:pt-0 lg:pb-0 border-b border-[#222]">
+    <!-- Декоративные линии -->
+    <div class="absolute top-0 left-10 w-px h-full bg-gradient-to-b from-transparent via-[#333] to-transparent z-0"></div>
+    <div class="absolute top-0 right-10 w-px h-full bg-gradient-to-b from-transparent via-[#333] to-transparent z-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 w-full relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-0 items-center">
+
+            <!-- Left Content -->
+            <div class="flex flex-col justify-center relative z-20">
+                <div class="inline-block bg-red-aggro text-white font-heading text-sm md:text-lg uppercase px-4 py-1 tracking-widest mb-6 self-start transform -skew-x-12 shadow-neon-red">
+                    УПАКУЙ СВОЙ БИЗНЕС · Ташкент
+                </div>
+
+                <h1 class="font-heading font-black text-6xl sm:text-7xl lg:text-[7rem] leading-[0.85] uppercase tracking-tighter text-white">
+                    Твой reels <br>
+                    <span class="text-lime-toxic drop-shadow-[0_0_15px_rgba(204,255,0,0.5)]">продает.</span><br>
+                    А профиль — <br>
+                    <span class="text-gray-600 line-through decoration-red-aggro decoration-[8px]">сливает</span>
+                </h1>
+
+                <p class="mt-8 text-gray-400 font-body font-semibold text-lg md:text-2xl max-w-xl leading-snug">
+                    Упакуем твою экспертность в премиальный мини-сайт. Начни получать оплаты, а не вопросы «сколько стоит?» в Direct.
+                </p>
+
+                <div class="mt-12">
+                    <a href="#cta" class="clip-path-btn relative inline-flex group items-center justify-center px-10 py-6 text-2xl font-heading font-black text-black-base uppercase transition-all duration-300 bg-lime-toxic shadow-neon-lime hover:shadow-neon-lime-intense hover:scale-[1.02] hover:bg-white active:scale-95">
+                        <span class="absolute inset-0 border-2 border-transparent group-hover:border-lime-toxic transition-all z-0"></span>
+                        <span class="relative z-10">Сделать разрывной сайт</span>
+                        <svg class="w-8 h-8 ml-4 relative z-10 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Mockup Placeholder (Broken Grid) -->
+            <div class="relative w-full h-[500px] lg:h-[800px] lg:-mr-32 lg:mt-20 z-30">
+                <div class="absolute inset-0 bg-black-card border-2 border-lime-toxic shadow-neon-lime transform lg:translate-x-12 lg:translate-y-12 rotate-2 flex items-center justify-center p-8 text-center group transition-transform hover:rotate-0 duration-500">
+                    <!-- Декоративные элементы рамки -->
+                    <div class="absolute top-0 left-0 w-4 h-4 border-t-2 border-l-2 border-white"></div>
+                    <div class="absolute top-0 right-0 w-4 h-4 border-t-2 border-r-2 border-white"></div>
+                    <div class="absolute bottom-0 left-0 w-4 h-4 border-b-2 border-l-2 border-white"></div>
+                    <div class="absolute bottom-0 right-0 w-4 h-4 border-b-2 border-r-2 border-white"></div>
+
+                    <div class="border border-dashed border-gray-600 w-full h-full flex items-center justify-center relative overflow-hidden bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyMDQsIDI1NSwgMCwgMC4xKSIvPjwvc3ZnPg==')]">
+
+                        <!-- Fake UI Elements floating -->
+                        <div class="absolute top-10 -left-5 bg-black-base border border-[#333] py-2 px-4 shadow-xl z-20 flex items-center gap-3">
+                            <div class="w-2 h-2 bg-red-aggro animate-pulse"></div>
+                            <span class="font-heading uppercase text-xs text-gray-300 tracking-widest">НЕ ПРОДАЕТ</span>
+                        </div>
+
+                        <img src="images/1.webp" alt="Мокап мини-сайта" class="w-full h-full object-cover object-center z-10">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- ПЕЙН-БЛОК (МАТРИЦА) -->
+<section class="py-32 relative dark-grid border-b border-[#222]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-20">
+            <h2 class="font-heading font-black text-7xl md:text-9xl uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-800 leading-none">
+                УЗНАЛИ СЕБЯ?
+            </h2>
+            <div class="w-24 h-2 bg-red-aggro mx-auto mt-6 shadow-neon-red"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
+
+            <!-- Card 1 -->
+            <div class="bg-black-card border border-[#222] p-10 relative overflow-hidden group hover:border-red-aggro transition-colors duration-300">
+                <div class="absolute -right-4 -top-10 font-heading font-black text-[120px] text-[#1a1a1a] z-0 transition-transform group-hover:scale-110">01</div>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-red-aggro/20 border border-red-aggro flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-red-aggro" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-3xl uppercase mb-4 text-white">Директ завален,<br>продаж нет</h3>
+                    <p class="font-body text-gray-400 font-medium">Сотни запросов цены, долгие переписки и слив клиентов на этапе отправки карты.</p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-black-card border border-[#222] p-10 relative overflow-hidden group hover:border-red-aggro transition-colors duration-300">
+                <div class="absolute -right-4 -top-10 font-heading font-black text-[120px] text-[#1a1a1a] z-0 transition-transform group-hover:scale-110">02</div>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-red-aggro/20 border border-red-aggro flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-red-aggro" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-3xl uppercase mb-4 text-white">Клиенты теряются<br>в Актуальных</h3>
+                    <p class="font-body text-gray-400 font-medium">Лабиринт из 15 кружочков highlights, где невозможно найти цены, услуги и кейсы.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-black-card border border-[#222] p-10 relative overflow-hidden group hover:border-red-aggro transition-colors duration-300">
+                <div class="absolute -right-4 -top-10 font-heading font-black text-[120px] text-[#1a1a1a] z-0 transition-transform group-hover:scale-110">03</div>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-red-aggro/20 border border-red-aggro flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-red-aggro" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-3xl uppercase mb-4 text-white">Часы на отправку<br>реквизитов</h3>
+                    <p class="font-body text-gray-400 font-medium">Рутина съедает твое время. Ты работаешь менеджером по продажам, а не экспертом.</p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="bg-black-card border border-[#222] p-10 relative overflow-hidden group hover:border-red-aggro transition-colors duration-300">
+                <div class="absolute -right-4 -top-10 font-heading font-black text-[120px] text-[#1a1a1a] z-0 transition-transform group-hover:scale-110">04</div>
+                <div class="relative z-10">
+                    <div class="w-12 h-12 bg-red-aggro/20 border border-red-aggro flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-red-aggro" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
+                    </div>
+                    <h3 class="font-heading font-bold text-3xl uppercase mb-4 text-white">Твой визуал<br>убивает чек</h3>
+                    <p class="font-body text-gray-400 font-medium">Бесплатный шаблон Linktree выглядит дешево. Премиум-клиенты не платят за кустарщину.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- РЕШЕНИЕ -->
+<section class="py-32 relative overflow-hidden bg-black-base">
+    <!-- Декоративные диагонали -->
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden z-0 pointer-events-none opacity-20">
+        <div class="absolute w-[200%] h-px bg-lime-toxic transform -rotate-45 top-1/4 -left-1/2"></div>
+        <div class="absolute w-[200%] h-px bg-lime-toxic transform -rotate-45 top-2/4 -left-1/2"></div>
+        <div class="absolute w-[200%] h-px bg-lime-toxic transform -rotate-45 top-3/4 -left-1/2"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-24 relative">
+            <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 text-[150px] font-heading font-black text-[#0f0f0f] z-0 select-none">SOLUTION</span>
+            <h2 class="relative z-10 font-heading font-black text-6xl md:text-8xl uppercase text-white tracking-tighter mix-blend-difference">
+                Метод: <span class="text-lime-toxic">Цифровой Админ</span>
+            </h2>
+        </div>
+
+        <!-- Asymmetric Grid -->
+        <div class="space-y-32">
+
+            <!-- Feature 1 -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5 order-2 lg:order-1 relative">
+                    <div class="h-[400px] bg-black-card border border-[#333] relative group flex items-center justify-center">
+                        <div class="absolute inset-0 bg-lime-toxic opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                        <img src="images/22.webp" alt="Скриншот UX структуры" class="absolute inset-0 w-full h-full object-cover object-center">
+                        <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-black-base border-2 border-lime-toxic flex items-center justify-center font-heading font-black text-4xl text-lime-toxic shadow-neon-lime">1</div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 lg:col-start-7 order-1 lg:order-2">
+                    <h3 class="font-heading font-black text-4xl md:text-5xl uppercase mb-6 text-white">Продающая структура<br><span class="text-gray-600">(Без воды)</span></h3>
+                    <p class="font-body text-xl text-gray-400 mb-8 leading-relaxed">Мы не делаем "просто кнопки". Мы строим воронку. Каждое слово, каждый блок ведет клиента к одному целевому действию — оплате.</p>
+                    <ul class="space-y-4 font-body font-bold text-lg text-gray-300">
+                        <li class="flex items-center gap-3"><span class="w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Триггерные заголовки</li>
+                        <li class="flex items-center gap-3"><span class="w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Упаковка кейсов по системе PAS</li>
+                        <li class="flex items-center gap-3"><span class="w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Снятие возражений до общения</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-6 order-1">
+                    <h3 class="font-heading font-black text-4xl md:text-5xl uppercase mb-6 text-white">Дизайн уровня<br><span class="text-lime-toxic drop-shadow-[0_0_15px_rgba(204,255,0,0.5)]">2026 года</span></h3>
+                    <p class="font-body text-xl text-gray-400 mb-8 leading-relaxed">Забудь про скучные белые фоны. Мы создаем агрессивный, премиальный Dark UI с 3D-элементами и неоновой подсветкой. Твой сайт будет кричать о высоком чеке.</p>
+                    <ul class="space-y-4 font-body font-bold text-lg text-gray-300">
+                        <li class="flex items-center gap-3"><span class="w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Кастомные 3D-мокапы</li>
+                        <li class="flex items-center gap-3"><span class="w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Сложная анимация элементов</li>
+                        <li class="flex items-center gap-3"><span class="w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Идеальный Pixel-Perfect</li>
+                    </ul>
+                </div>
+                <div class="lg:col-span-5 lg:col-start-8 order-2 relative">
+                    <div class="h-[400px] bg-black-card border border-[#333] relative group flex items-center justify-center transform lg:translate-x-10">
+                        <div class="absolute inset-0 bg-lime-toxic opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                        <img src="images/33.webp" alt="Dark UI интерфейс" class="absolute inset-0 w-full h-full object-cover object-center">
+                        <div class="absolute -top-5 -left-5 w-24 h-24 bg-black-base border-2 border-lime-toxic flex items-center justify-center font-heading font-black text-4xl text-lime-toxic shadow-neon-lime">2</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Фокус на горячих лидах -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-5 order-2 lg:order-1 relative">
+                    <div class="h-[400px] bg-black-card border border-[#333] relative group flex items-center justify-center">
+                        <div class="absolute inset-0 bg-lime-toxic opacity-0 group-hover:opacity-10 transition-opacity"></div>
+                        <img src="images/44.webp" alt="Кнопка Купить → Telegram/WhatsApp" class="absolute inset-0 w-full h-full object-cover object-center">
+                        <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-black-base border-2 border-lime-toxic flex items-center justify-center font-heading font-black text-4xl text-lime-toxic shadow-neon-lime">3</div>
+                    </div>
+                    <!-- Floating badge -->
+                    <div class="absolute -right-10 top-20 bg-black-card border-l-4 border-lime-toxic p-4 shadow-neon-lime flex items-center gap-4 z-20">
+                        <div class="w-3 h-3 bg-lime-toxic rounded-full animate-pulse shadow-[0_0_10px_#CCFF00]"></div>
+                        <div>
+                            <p class="font-heading text-gray-400 text-xs uppercase tracking-wider">Горячий лид</p>
+                            <p class="font-body text-white font-bold text-lg">«Куда переводить?»</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 lg:col-start-7 order-1 lg:order-2">
+                    <h3 class="font-heading font-black text-4xl md:text-5xl uppercase mb-6 text-white">Фокус на<br><span class="text-lime-toxic drop-shadow-[0_0_15px_rgba(204,255,0,0.5)]">горячих лидах</span></h3>
+                    <p class="font-body text-xl text-gray-400 mb-8 leading-relaxed">Мы выстраиваем путь клиента так, что он сам закрывает все свои возражения, пока листает твой мини-сайт. Кнопка «Купить» ведет не на унылую анкету, а перебрасывает клиента прямо в твой Telegram/WhatsApp с уже написанным сообщением: «Я хочу купить, куда переводить деньги?».</p>
+                    <ul class="space-y-4 font-body font-bold text-lg text-gray-300">
+                        <li class="flex items-center gap-3"><span class="flex-shrink-0 w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Смысловая упаковка</li>
+                        <li class="flex items-center gap-3"><span class="flex-shrink-0 w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Отсев халявщиков</li>
+                        <li class="flex items-center gap-3"><span class="flex-shrink-0 w-3 h-3 bg-lime-toxic shadow-[0_0_10px_#CCFF00]"></span> Запуск за 3 дня</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ДОКАЗАТЕЛЬСТВА (БЫЛО -> СТАЛО) -->
+<section class="py-32 relative border-t border-[#222] bg-black-base">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-6">
+            <h2 class="font-heading font-black text-6xl md:text-8xl uppercase tracking-tighter text-white">
+                БЫЛО <span class="text-gray-700">-></span><br>
+                <span class="text-lime-toxic drop-shadow-[0_0_15px_rgba(204,255,0,0.5)]">СТАЛО</span>
+            </h2>
+            <p class="font-body text-gray-400 font-bold max-w-sm text-right text-lg md:text-xl">
+                Разница между аккаунтом-невидимкой и машиной по генерации кэша.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+            <!-- БЫЛО (Ужас) -->
+            <div class="bg-[#0a0a0a] border border-red-aggro/30 p-10 relative flex flex-col items-center">
+                <div class="absolute top-0 left-0 w-full h-1 bg-red-aggro shadow-neon-red"></div>
+                <div class="absolute top-4 left-4 bg-red-aggro/20 text-red-aggro font-heading px-3 py-1 text-sm uppercase font-bold border border-red-aggro">Теряет клиентов</div>
+
+                <div class="w-full max-w-[300px] h-[600px] border-8 border-[#222] bg-[#111] mt-10 relative flex items-center justify-center overflow-hidden grayscale">
+                    <img src="images/55.webp" alt="Было — без дизайна" class="absolute inset-0 w-full h-full object-cover object-center">
+
+                    <!-- Floating negative chat bubble -->
+                    <div class="absolute top-20 -left-10 bg-[#111] border border-[#333] p-3 flex gap-3 opacity-70">
+                        <div class="w-8 h-8 bg-[#222]"></div>
+                        <div>
+                            <p class="font-body text-[10px] text-gray-500">Клиент</p>
+                            <p class="font-body text-xs text-white">А куда платить?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- СТАЛО (Премиум) -->
+            <div class="bg-black-card border border-lime-toxic p-10 relative flex flex-col items-center shadow-[inset_0_0_50px_rgba(204,255,0,0.05)]">
+                <div class="absolute top-0 left-0 w-full h-1 bg-lime-toxic shadow-neon-lime"></div>
+                <div class="absolute top-4 left-4 bg-lime-toxic/20 text-lime-toxic font-heading px-3 py-1 text-sm uppercase font-bold border border-lime-toxic">Генерит Sold Out</div>
+
+                <div class="w-full max-w-[300px] h-[600px] border-8 border-lime-toxic bg-[#050505] mt-10 relative flex items-center justify-center overflow-visible shadow-neon-lime">
+                    <img src="images/00.jpg" alt="Стало — премиум дизайн" class="absolute inset-0 w-full h-full object-cover object-center">
+
+                    <!-- Floating positive UI -->
+                    <div class="absolute bottom-20 -right-12 bg-black-base border border-lime-toxic p-3 flex items-center gap-3 shadow-neon-lime z-20 whitespace-nowrap">
+                        <div class="w-8 h-8 bg-lime-toxic flex items-center justify-center text-black font-bold">✓</div>
+                        <div>
+                            <p class="font-heading text-[10px] text-lime-toxic uppercase tracking-wider">Успешно</p>
+                            <p class="font-body text-sm text-white font-bold">Оплата поступила</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="cta" class="py-32 relative bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMSIgZmlsbD0icmdiYSgyNTUsIDI1NSwgMjU1LCAwLjA1KSIvPjwvc3ZnPg==')]">
+
+    <!-- Жесткий градиент на фоне -->
+    <div class="absolute inset-0 bg-gradient-to-t from-black-base via-transparent to-black-base z-0"></div>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-lime-toxic rounded-full blur-[150px] opacity-10 pointer-events-none z-0"></div>
+
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="bg-black-card border border-[#333] p-10 md:p-16 relative">
+            <!-- Углы -->
+            <div class="absolute top-0 left-0 w-8 h-8 border-t-4 border-l-4 border-lime-toxic"></div>
+            <div class="absolute bottom-0 right-0 w-8 h-8 border-b-4 border-r-4 border-lime-toxic"></div>
+
+            <div class="text-center mb-12">
+                <h2 class="font-heading font-black text-5xl md:text-7xl uppercase text-white leading-none mb-6">
+                    Хватит терять деньги <br> на каждом <span class="text-red-aggro">Reels</span>
+                </h2>
+                <p class="font-body text-xl text-gray-400 font-medium">Оставь заявку сейчас. Мы свяжемся и предложим концепт упаковки.</p>
+            </div>
+
+            <a href="https://t.me/synaplinkpro" target="_blank" rel="noopener noreferrer" class="block w-full bg-lime-toxic text-black-base font-heading font-black text-3xl uppercase py-6 border-2 border-lime-toxic shadow-neon-lime hover:bg-white hover:scale-[1.01] transition-all transform skew-x-[-2deg] active:scale-95 text-center">
+                Начать проект
+            </a>
+
+            <div class="mt-8 text-center border-t border-[#222] pt-8">
+                <p class="font-body text-sm md:text-base text-gray-500 font-bold uppercase tracking-widest">
+                    <span class="text-red-aggro">ВНИМАНИЕ:</span> Берем только 5 проектов в месяц. <br class="hidden md:block">
+                    Вы либо в их числе, либо отдаете клиентов конкурентам.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 border-t border-[#111] text-center relative z-10 bg-black-base">
+    <p class="font-heading text-gray-700 uppercase tracking-widest text-sm">
+        © 2026 SYNAPLINK. PREMIUM TAPLINK DESIGN. TASHKENT.
+    </p>
+</footer>
+
+</body>
+</html>
