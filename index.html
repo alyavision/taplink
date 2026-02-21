@@ -112,7 +112,7 @@
                 </p>
 
                 <div class="mt-12">
-                    <a href="#cta" class="clip-path-btn relative inline-flex group items-center justify-center px-10 py-6 text-2xl font-heading font-black text-black-base uppercase transition-all duration-300 bg-lime-toxic shadow-neon-lime hover:shadow-neon-lime-intense hover:scale-[1.02] hover:bg-white active:scale-95">
+                    <a href="javascript:void(0)" data-scroll-to="cta" class="clip-path-btn relative inline-flex group items-center justify-center px-10 py-6 text-2xl font-heading font-black text-black-base uppercase transition-all duration-300 bg-lime-toxic shadow-neon-lime hover:shadow-neon-lime-intense hover:scale-[1.02] hover:bg-white active:scale-95">
                         <span class="absolute inset-0 border-2 border-transparent group-hover:border-lime-toxic transition-all z-0"></span>
                         <span class="relative z-10">Сделать разрывной сайт</span>
                         <svg class="w-8 h-8 ml-4 relative z-10 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
@@ -399,9 +399,19 @@
         window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
         document.documentElement.scrollTop = 0;
         document.body.scrollTop = 0;
+        if (window.location.hash) history.replaceState(null, '', window.location.pathname || '/');
     }
     scrollToTop();
-    document.addEventListener('DOMContentLoaded', scrollToTop);
+    document.addEventListener('DOMContentLoaded', function () {
+        scrollToTop();
+        document.querySelectorAll('[data-scroll-to]').forEach(function (el) {
+            el.addEventListener('click', function () {
+                var id = this.getAttribute('data-scroll-to');
+                var target = document.getElementById(id);
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    });
     window.addEventListener('load', function () { scrollToTop(); setTimeout(scrollToTop, 0); });
     window.addEventListener('pageshow', function (e) { scrollToTop(); if (e.persisted) setTimeout(scrollToTop, 100); });
 </script>
