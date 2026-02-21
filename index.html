@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>САЙТЫ ДЛЯ БИЗНЕСА | ТАШКЕНТ</title>
+<script>
+    (function(){ if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; })();
+</script>
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -391,5 +394,16 @@
     </p>
 </footer>
 
+<script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
+        document.documentElement.scrollTop = 0;
+        document.body.scrollTop = 0;
+    }
+    scrollToTop();
+    document.addEventListener('DOMContentLoaded', scrollToTop);
+    window.addEventListener('load', function () { scrollToTop(); setTimeout(scrollToTop, 0); });
+    window.addEventListener('pageshow', function (e) { scrollToTop(); if (e.persisted) setTimeout(scrollToTop, 100); });
+</script>
 </body>
 </html>
